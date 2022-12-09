@@ -1,0 +1,18 @@
+.offerCard {
+    margin-right: 49px;
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding: 21px 34px;
+}
+
+.offerCard__image {
+    width: 220px;
+    border-radius: 20px;
+}
+
+.offerCard__title {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
