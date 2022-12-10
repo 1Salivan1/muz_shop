@@ -12,8 +12,8 @@ import OfferCard from './components/OfferCard';
 function App() {
   return (
     <body>
-      <div className='wrapper'>
-        <header className="header">
+      <header className="header">
+        <div className='container'>
           <img src={logo} alt=""></img>
           <nav className="header__nav">
             <a href="#" className="header__nav-item">Главня</a>
@@ -24,9 +24,11 @@ function App() {
             У нас вы найдете подходящий для себя инструмент
           </h1>
           <button className='header__button button'>Перейти к выбору</button>
-        </header>
+        </div>
+      </header>
 
-        <section className='offer'>
+      <section className='offer'>
+        <div className='container'>
           <h1 className='offer__title title'>
             Вот что мы можем вам предложить
           </h1>
@@ -36,35 +38,39 @@ function App() {
             <OfferCard img={drums} title="Барабаны"/>
             <OfferCard img={saxophone} title="Саксофон"/>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className='personal'>
+      <section className='personal'>
+        <div className='container'>
           <h1 className='personal__title title'>Инструмент на заказ</h1>
           <p className='peresonal__description'>
             Вы так же можете заказать инструмент у нас, наши мастера сделают его в течении недели.
           </p>
           <button className='personal__button button'>Заказать</button>
-        </section>
+        </div>
+      </section>
 
-        <footer className='footer'>
-          <div className='footer__right'>
+      <footer className='footer'>
+        <div className='container footer-container'>
+          <div className='footer__left'>
             <h3 className='footer__header'>Контакты:</h3>
             <p className='footer__description'>+ 380 999 999 999</p>
             <p className='footer__description'>+ 380 777 777 777</p>
             <h3 className='footer__header'>Email:</h3>
             <p className='footer__description'>muzshop@example.com</p>
           </div>
-          <div className='footer__left'>
-            <h3 className='footer__header'>Соц. сети:</h3>
-            <div className='footer__left-social'>
-              <img className='footer__left-social-item' src={telegram}></img>
-              <img className='footer__left-social-item' src={instagram}></img>
-              <img className='footer__left-social-item' src={facebook}></img>
+          <div className='footer__right'>
+            <h3 className='footer__header footer__right-header'>Соц. сети:</h3>
+            <div className='footer__right-social'>
+              <a href='#' className='footer__right-social-item'><img src={telegram}></img></a>
+              <a href='#' className='footer__right-social-item'><img src={instagram}></img></a>
+              <a href='#' className='footer__right-social-item'><img src={facebook}></img></a>
             </div>
-            <img className='footer__left-logo' src={logo}></img>
+            <a href='#'><img className='footer__right-logo' src={logo}></img></a>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </body>
   );
 }
