@@ -6,14 +6,17 @@ body {
 }
 
 .wrapper {
-    min-width: 1732px;
+    max-width: 1732px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* classes */
 
 .title {
-    font-size: 96px;
+    font-size: 80px;
     font-weight: 700;
+    text-align: center;
 }
 
 .button {
@@ -32,8 +35,7 @@ body {
     color: white;
     padding-left: 94px;
     padding-right: 94px;
-    background-image: url(./img/fone.png);
-    background-size: 100% auto;
+    background: url(./img/fone.png) no-repeat;
     text-align: center;
 }
 
@@ -53,11 +55,70 @@ body {
 }
 
 .header__button {
-    margin-bottom: 320px;
+    margin-bottom: 200px;
 }
 
+/* Offer */
 
+.offer {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
 
+.offer__title {
+    margin-top: 0;
+}
 
+.offer__list {
+    display: flex;
+    justify-content: center;
+}
 
+.personal {
+    color: #FFFFFF;
+    background-color: rgb(58, 58, 58); 
+    padding-bottom: 100px;
+}
+
+.personal__title {
+    margin-top: 0;
+}
+
+.peresonal__description {
+    font-size: 30px;
+    width: 40%;
+}
+
+.personal__button {
+    font-size: 30px;
+    padding: 30px 40px;
+}
+
+/* Footer */
+
+.footer {
+    color: #FFFFFF;
+    background-color: rgb(31, 31, 31); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__header {
+    font-size: 30px;
+}
+
+.footer__description {
+    font-size: 20px;
+}
+
+.footer__left-social-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer__left-logo {
+    width: 80%;
+}
 

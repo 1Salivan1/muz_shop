@@ -1,18 +1,17 @@
+.offerCard:not(:last-child) {
+    margin-right: 40px;
+}
+
 .offerCard {
-    margin-right: 49px;
-    background-color: #EDEDED;
+    background-color: grey;
     border-radius: 20px;
-    padding: 21px 34px;
+    color: black;
+    padding: 31px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
 }
 
-.offerCard__image {
-    width: 220px;
-    border-radius: 20px;
-}
-
-.offerCard__title {
-    font-size: 48px;
-    font-weight: 500;
-    margin-top: 12px;
-    margin-bottom: 12px;
+.offerCard:hover {
+    box-shadow: 0px 4px 10px #fff;
 }

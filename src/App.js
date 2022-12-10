@@ -55,11 +55,13 @@ function App() {
             <p className='footer__description'>muzshop@example.com</p>
           </div>
           <div className='footer__left'>
-            <h3>Соц. сети:</h3>
-            <img src={telegram}></img>
-            <img src={instagram}></img>
-            <img src={facebook}></img>
-            <img src={logo}></img>
+            <h3 className='footer__header'>Соц. сети:</h3>
+            <div className='footer__left-social'>
+              <img className='footer__left-social-item' src={telegram}></img>
+              <img className='footer__left-social-item' src={instagram}></img>
+              <img className='footer__left-social-item' src={facebook}></img>
+            </div>
+            <img className='footer__left-logo' src={logo}></img>
           </div>
         </footer>
       </div>
