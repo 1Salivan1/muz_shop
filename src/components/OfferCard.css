@@ -15,9 +15,3 @@
 .offerCard:hover {
     box-shadow: 0px 4px 10px #fff;
 }
-
-.offerCard__title {
-    font-weight: 500;
-    margin-bottom: 0;
-    font-size: 30px;
-}
