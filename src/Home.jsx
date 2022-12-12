@@ -1,10 +1,4 @@
-import './App.css';
-import {Routes, Route, Link} from 'react-router-dom';
 import React from 'react';
-import Home from './Home';
-import Shop from './pages/Shop';
-import Instruments from './pages/Instruments';
-import Contacts from './pages/Contacts';
 import OfferCard from './components/OfferCard';
 import logo from './img/logo.png';
 import guitar from './img/guitar.png';
@@ -15,16 +9,16 @@ import telegram from './img/telegram.png';
 import instagram from './img/instagram.png';
 import facebook from './img/facebook.png';
 
-function App() {
-  return (
+function Home(props) {
+    return (
     <body>
       <header className="header">
         <div className='container'>
           <img src={logo} alt=""></img>
           <nav className="header__nav">
-            <a href="/" className="header__nav-item">Главня</a>
-            <a href="/instruments" className="header__nav-item" onClick={() => window.open("./pages/Instruments.jsx")}>Инструменты</a>
-            <a href="/contacts" className="header__nav-item">Контакты</a>
+            <a href="#" className="header__nav-item">Главня</a>
+            <a href="#" className="header__nav-item">Инструменты</a>
+            <a href="#" className="header__nav-item">Контакты</a>
           </nav>
           <h1 className='header__title title'>
             У нас вы найдете подходящий для себя инструмент
@@ -78,7 +72,7 @@ function App() {
         </div>
       </footer>
     </body>
-  );
+    );
 }
 
-export default App;
+export default Home;
