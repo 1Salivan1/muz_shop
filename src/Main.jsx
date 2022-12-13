@@ -14,12 +14,6 @@ function Home(props) {
     <body>
       <header className="header">
         <div className='container'>
-          <img src={logo} alt=""></img>
-          <nav className="header__nav">
-            <a href="#" className="header__nav-item">Главня</a>
-            <a href="#" className="header__nav-item">Инструменты</a>
-            <a href="#" className="header__nav-item">Контакты</a>
-          </nav>
           <h1 className='header__title title'>
             У нас вы найдете подходящий для себя инструмент
           </h1>
