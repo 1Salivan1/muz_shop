@@ -2,6 +2,10 @@
     background-color: rgb(58, 58, 58);
 }
 
+.header__nav-list {
+    padding-bottom: 35px;
+}
+
 .header__nav {
     text-align: center;
 }
