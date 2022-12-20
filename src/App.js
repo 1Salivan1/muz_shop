@@ -1,7 +1,8 @@
 import './App.css';
-import {Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import Home from './Home';
+import Main from './Main';
+import Nav from './Nav';
 import Shop from './pages/Shop';
 import Instruments from './pages/Instruments';
 import Contacts from './pages/Contacts';
@@ -17,67 +18,11 @@ import facebook from './img/facebook.png';
 
 function App() {
   return (
-    <body>
-      <header className="header">
-        <div className='container'>
-          <img src={logo} alt=""></img>
-          <nav className="header__nav">
-            <a href="/" className="header__nav-item">Главня</a>
-            <a href="/instruments" className="header__nav-item" onClick={() => window.open("./pages/Instruments.jsx")}>Инструменты</a>
-            <a href="/contacts" className="header__nav-item">Контакты</a>
-          </nav>
-          <h1 className='header__title title'>
-            У нас вы найдете подходящий для себя инструмент
-          </h1>
-          <button className='header__button button'>Перейти к выбору</button>
-        </div>
-      </header>
-
-      <section className='offer'>
-        <div className='container'>
-          <h1 className='offer__title title'>
-            Вот что мы можем вам предложить
-          </h1>
-          <div className='offer__list'>
-            <OfferCard img={guitar} title="Гитара"/>
-            <OfferCard img={violence} title="Скрипка"/>
-            <OfferCard img={drums} title="Барабаны"/>
-            <OfferCard img={saxophone} title="Саксофон"/>
-          </div>
-        </div>
-      </section>
-
-      <section className='personal'>
-        <div className='container'>
-          <h1 className='personal__title title'>Инструмент на заказ</h1>
-          <p className='peresonal__description'>
-            Вы так же можете заказать инструмент у нас, наши мастера сделают его в течении недели.
-          </p>
-          <button className='personal__button button' href="/Shop.jsx">Заказать</button>
-        </div>
-      </section>
-
-      <footer className='footer'>
-        <div className='container footer-container'>
-          <div className='footer__left'>
-            <h3 className='footer__header'>Контакты:</h3>
-            <p className='footer__description'>+ 380 999 999 999</p>
-            <p className='footer__description'>+ 380 777 777 777</p>
-            <h3 className='footer__header'>Email:</h3>
-            <p className='footer__description'>muzshop@example.com</p>
-          </div>
-          <div className='footer__right'>
-            <h3 className='footer__header footer__right-header'>Соц. сети:</h3>
-            <div className='footer__right-social'>
-              <a href='#' className='footer__right-social-item'><img src={telegram}></img></a>
-              <a href='#' className='footer__right-social-item'><img src={instagram}></img></a>
-              <a href='#' className='footer__right-social-item'><img src={facebook}></img></a>
-            </div>
-            <a href='#'><img className='footer__right-logo' src={logo}></img></a>
-          </div>
-        </div>
-      </footer>
-    </body>
+    <div>
+      <BrowserRouter>
+        <Nav />
+      </BrowserRouter>
+    </div>
   );
 }
 
