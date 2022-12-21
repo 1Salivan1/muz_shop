@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Shop from './pages/Shop';
 import Instruments from './pages/Instruments';
 import Contacts from './pages/Contacts';
 import Main from './Main';

@@ -3,11 +3,11 @@
     background-color: #D9D9D9;
     border-radius: 20px;
     padding: 24px 22px;
+    margin-bottom: 45px;
 }
 
 .product:not(:last-child) {
     margin-right: 86px;
-    margin-bottom: 45px;
 }
 
 .product__image {
