@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import Main from './Main';
 import Nav from './Nav';
-import Instruments from './pages/Instruments';
+import Shop from './pages/Shop';
 import Contacts from './pages/Contacts';
 import OfferCard from './components/OfferCard';
 import logo from './img/logo.png';

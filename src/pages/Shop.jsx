@@ -2,9 +2,13 @@ import React from 'react';
 import './Instruments.css';
 import Product from '../components/Product'
 import guitar from '../img/guitar.png';
+import violence from '../img/violence.png';
+import drums from '../img/drums.png';
+import saxophone from '../img/saxophone.png';
 import cart from '../img/cart.png';
+import instruments from "../data/data.json";
 
-function Instruments(props) {
+function Shop(props) {
     return (
             <div className='shop'>
                 <div className='container'>
@@ -29,13 +33,7 @@ function Instruments(props) {
                             </ul>
                         </div>
                         <div className='shop__main-products'>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
-                            <Product className='shop__main-products-card' img={guitar} title={"Гитара"} price={"3200 грн"}></Product>
+                            <Product/>
                         </div>
                     </div>
                 </div>
@@ -43,4 +41,4 @@ function Instruments(props) {
     );
 }
 
-export default Instruments;
+export default Shop;
