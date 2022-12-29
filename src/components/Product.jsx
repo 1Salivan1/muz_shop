@@ -8,10 +8,12 @@ function Product() {
                 {data.map((el) => {
                     return (
                         <div className='product' key={el.id}>
-                            <div className='product__image-background'>
-                                <img className='product__image' src={el.img}></img>
+                            <div className='buy__top'>
+                                <div className='product__top-image-background'>
+                                    <img className='product__top-image' src={el.img}></img>
+                                </div>
+                                <h3 className='product__top-title'>{el.title}</h3>
                             </div>
-                            <h3 className='product__title'>{el.title}</h3>
                             <div className='product__buy'>
                                 <h3 className='product__buy-price'>{el.price} грн</h3>
                                 <button className='product__buy-button'>В корзину</button>
