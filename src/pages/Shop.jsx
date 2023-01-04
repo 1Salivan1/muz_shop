@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Instruments.css';
 import Product from '../components/Product'
 import guitar from '../img/guitar.png';
@@ -6,15 +6,23 @@ import violence from '../img/violence.png';
 import drums from '../img/drums.png';
 import saxophone from '../img/saxophone.png';
 import cart from '../img/cart.png';
-import instruments from "../data/data.json";
+import data from "../data/data.json";
 
 function Shop(props) {
+    const [value, setValue] = useState('');
+
     return (
             <div className='shop'>
                 <div className='container'>
                     <div className='shop__search'>
                         <form>
-                            <input className='shop__search-input' placeholder="Поиск"></input>
+                            <input 
+                                className='shop__search-input' 
+                                placeholder="Поиск" 
+                                onChange={(e) => setValue(e.target.value)}
+                            >
+                                
+                            </input>
                             <select name='shop__search-sort'>
                                 <option value="1">По релевантности</option>
                                 <option value="2">От дешевых к дорогим</option>
@@ -33,7 +41,15 @@ function Shop(props) {
                             </ul>
                         </div>
                         <div className='shop__main-products'>
-                            <Product/>
+                            {
+                                data.filter((el) => {
+                                    return value.toLowerCase() === '' ? el : el.title.toLowerCase().includes(value.toLowerCase())
+                                }).map((el, index) => {
+                                    return (
+                                        <Product img={el.img} title={el.title} price={el.price} key={el.id}/>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
