@@ -1,15 +1,22 @@
 import React from 'react';
+import data from '../data/data.json';
 import './Product.css';
 
-function Product(props) {
+function Product({img, title, price, id}) {
     return (
-        <div className='product'>
-            <img className='product__image' src={props.img}></img>
-            <h3 className='product__title'>{props.title}</h3>
-            <h3 className='product__price'>{props.price}</h3>
-            <button className='product__button'>В корзину</button>
-        </div>
-    );
+                <div className='product' key={id}>
+                    <div className='buy__top'>
+                        <div className='product__top-image-background'>
+                            <img className='product__top-image' src={img}></img>
+                        </div>
+                        <h3 className='product__top-title'>{title}</h3>
+                    </div>
+                    <div className='product__buy'>
+                        <h3 className='product__buy-price'>{price} грн</h3>
+                        <button className='product__buy-button'>В корзину</button>
+                    </div>
+                </div>
+            )
 }
 
 export default Product;

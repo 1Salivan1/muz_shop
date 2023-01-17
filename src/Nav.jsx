@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Shop from './pages/Shop';
-import Instruments from './pages/Instruments';
 import Contacts from './pages/Contacts';
 import Main from './Main';
 import './Nav.css';
@@ -21,7 +20,7 @@ function Nav(props) {
             </nav>
             <Routes>
                 <Route path='/' element={<Main />}/>
-                <Route path='/instruments' element={<Instruments />}/>
+                <Route path='/instruments' element={<Shop />}/>
                 <Route path='/contacts' element={<Contacts />}/>
             </Routes>
         </div>

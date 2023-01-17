@@ -1,10 +1,8 @@
-import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import Main from './Main';
 import Nav from './Nav';
 import Shop from './pages/Shop';
-import Instruments from './pages/Instruments';
 import Contacts from './pages/Contacts';
 import OfferCard from './components/OfferCard';
 import logo from './img/logo.png';

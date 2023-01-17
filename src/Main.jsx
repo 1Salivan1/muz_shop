@@ -1,4 +1,5 @@
 import React from 'react';
+import './Main.css';
 import OfferCard from './components/OfferCard';
 import logo from './img/logo.png';
 import guitar from './img/guitar.png';
@@ -49,10 +50,10 @@ function Home(props) {
         <div className='container footer-container'>
           <div className='footer__left'>
             <h3 className='footer__header'>Контакты:</h3>
-            <p className='footer__description'>+ 380 999 999 999</p>
-            <p className='footer__description'>+ 380 777 777 777</p>
+            <p className='footer__description'><a href='tel:+380999999999'>+ 380 999 999 999</a></p>
+            <p className='footer__description'><a href='tel:+380777777777'>+ 380 777 777 777</a></p>
             <h3 className='footer__header'>Email:</h3>
-            <p className='footer__description'>muzshop@example.com</p>
+            <p className='footer__description'><a href="mailto:muzshop@example.com">muzshop@example.com</a></p>
           </div>
           <div className='footer__right'>
             <h3 className='footer__header footer__right-header'>Соц. сети:</h3>

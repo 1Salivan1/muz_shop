@@ -1,0 +1,10 @@
+[
+    {"id":1,"type":"guitar","title":"Гитара Yamaha", "price":"6500", "img":"/img/guitar-yamaha.jpg"},
+    {"id":2,"type":"guitar","title":"Гитара Fender", "price":"7300", "img":"/img/guitar-fender.jpg"},
+    {"id":3,"type":"violence","title":"Скрипка Yamaha", "price":"16000", "img":"/img/yamaha-violence.jpg"},
+    {"id":4,"type":"violence","title":"Скрипка Cervini", "price":"4200", "img":"/img/violence-cervini.jpg"},
+    {"id":5,"type":"saxophone","title":"Саксофон Yamaha", "price":"45000", "img":"/img/saxophone-yamaha.jpg"},
+    {"id":6,"type":"drums","title":"Барабаны Yamaha", "price":"30000", "img":"/img/drums-yamaha.jpg"}
+]
+
+
