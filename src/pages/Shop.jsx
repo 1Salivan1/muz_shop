@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import './Instruments.css';
 import Product from '../components/Product'
-import guitar from '../img/guitar.png';
-import violence from '../img/violence.png';
-import drums from '../img/drums.png';
-import saxophone from '../img/saxophone.png';
 import cart from '../img/cart.png';
 import data from "../data/data.json";
 
-function Shop(props) {
+function Shop() {
+    let currentData = data;
     const [value, setValue] = useState('');
+
+    const dataFilter = (event) => {
+        if (event.target.textContent.toLowerCase() === 'все'){
+            return (
+                data.map((e, index) => {
+                    <Product img={e.img} title={e.title} price={e.price} key={e.id}/>
+                })
+            )
+        }
+    }
 
     return (
             <div className='shop'>
@@ -21,7 +28,6 @@ function Shop(props) {
                                 placeholder="Поиск" 
                                 onChange={(e) => setValue(e.target.value)}
                             >
-                                
                             </input>
                             <select name='shop__search-sort'>
                                 <option value="1">По релевантности</option>
@@ -34,10 +40,11 @@ function Shop(props) {
                     <div className='shop__main'>
                         <div className='shop__main-category'>
                             <ul className='shop__main-category-list'>
-                                <li className='shop__main-category-item'>Гитары</li>
-                                <li className='shop__main-category-item'>Скприпки</li>
-                                <li className='shop__main-category-item'>Саксофоны</li>
-                                <li className='shop__main-category-item'>Барабаны</li>
+                                <li className='shop__main-category-item' onClick={dataFilter}>Все</li>
+                                <li className='shop__main-category-item' onClick={dataFilter}>Гитары</li>
+                                <li className='shop__main-category-item' onClick={dataFilter}>Скприпки</li>
+                                <li className='shop__main-category-item' onClick={dataFilter}>Саксофоны</li>
+                                <li className='shop__main-category-item' onClick={dataFilter}>Барабаны</li>
                             </ul>
                         </div>
                         <div className='shop__main-products'>
