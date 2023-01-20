@@ -2,9 +2,9 @@ import React from 'react';
 import data from '../data/data.json';
 import './Product.css';
 
-function Product({img, title, price, id}) {
+function Product({img, title, price, id, type}) {
     return (
-                <div className='product' key={id}>
+                <div className='product' key={id} type={type}>
                     <div className='buy__top'>
                         <div className='product__top-image-background'>
                             <img className='product__top-image' src={img}></img>

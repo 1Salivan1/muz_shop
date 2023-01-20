@@ -5,16 +5,20 @@ import cart from '../img/cart.png';
 import data from "../data/data.json";
 
 function Shop() {
-    let currentData = data;
     const [value, setValue] = useState('');
+    const [currentData, setCurrentData] = useState(data);
 
-    const dataFilter = (event) => {
-        if (event.target.textContent.toLowerCase() === 'все'){
-            return (
-                data.map((e, index) => {
-                    <Product img={e.img} title={e.title} price={e.price} key={e.id}/>
-                })
-            )
+    function dataFilter(event) {
+        if (event.target.textContent.toLowerCase() === 'все') {
+            setCurrentData(data)
+        } else if (event.target.textContent.toLowerCase() === 'гитары') {
+            setCurrentData(data.filter(e => e.type === 'guitar'));
+        } else if (event.target.textContent.toLowerCase() === 'скрипки') {
+            setCurrentData(data.filter(e => e.type === 'violence'));
+        } else if (event.target.textContent.toLowerCase() === 'саксофоны') {
+            setCurrentData(data.filter(e => e.type === 'saxophone'));
+        } else if (event.target.textContent.toLowerCase() === 'барабаны') {
+            setCurrentData(data.filter(e => e.type === 'drums'));
         }
     }
 
@@ -30,7 +34,7 @@ function Shop() {
                             >
                             </input>
                             <select name='shop__search-sort'>
-                                <option value="1">По релевантности</option>
+                                <option value="1">Без сортирорвки</option>
                                 <option value="2">От дешевых к дорогим</option>
                                 <option value="3">От дорогих к дешевым</option>
                             </select>
@@ -42,14 +46,14 @@ function Shop() {
                             <ul className='shop__main-category-list'>
                                 <li className='shop__main-category-item' onClick={dataFilter}>Все</li>
                                 <li className='shop__main-category-item' onClick={dataFilter}>Гитары</li>
-                                <li className='shop__main-category-item' onClick={dataFilter}>Скприпки</li>
+                                <li className='shop__main-category-item' onClick={dataFilter}>Скрипки</li>
                                 <li className='shop__main-category-item' onClick={dataFilter}>Саксофоны</li>
                                 <li className='shop__main-category-item' onClick={dataFilter}>Барабаны</li>
                             </ul>
                         </div>
                         <div className='shop__main-products'>
                             {
-                                data.filter((el) => {
+                                currentData.filter((el) => {
                                     return value.toLowerCase() === '' ? el : el.title.toLowerCase().includes(value.toLowerCase())
                                 }).map((el, index) => {
                                     return (
