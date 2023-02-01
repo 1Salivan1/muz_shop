@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Instruments.css';
+import Cart from '../components/Cart'
 import Product from '../components/Product'
 import cart from '../img/cart.png';
 import data from "../data/data.json";
@@ -7,6 +8,8 @@ import data from "../data/data.json";
 function Shop() {
     const [value, setValue] = useState('');
     const [currentData, setCurrentData] = useState(data);
+    const [modalActive, modalSetActive] = useState(false);
+    const [cartList, setCartList] = useState([]);
 
     function dataFilter(event) {
         if (event.target.textContent.toLowerCase() === 'все') {
@@ -39,7 +42,7 @@ function Shop() {
                                 <option value="3">От дорогих к дешевым</option>
                             </select>
                         </form>
-                        <img src={cart} className='shop__search-cart'></img>
+                        <img className='shop__search-cart' src={cart} onClick={() => modalSetActive(true)}></img>
                     </div>
                     <div className='shop__main'>
                         <div className='shop__main-category'>
@@ -57,12 +60,13 @@ function Shop() {
                                     return value.toLowerCase() === '' ? el : el.title.toLowerCase().includes(value.toLowerCase())
                                 }).map((el, index) => {
                                     return (
-                                        <Product img={el.img} title={el.title} price={el.price} key={el.id}/>
+                                        <Product img={el.img} title={el.title} price={el.price} key={el.id} addToCart={() => setCartList([...cartList, el])}/>
                                     )
                                 })
                             }
                         </div>
                     </div>
+                    <Cart active={modalActive} setActive={modalSetActive} offer={cartList}/>
                 </div>
             </div>
     );
