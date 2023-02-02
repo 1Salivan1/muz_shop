@@ -8,8 +8,12 @@ function Cart ({active, setActive, offer}) {
         <div className={active ? 'cart active' : 'cart'} onClick={() => setActive(false)}>
             <div className="cart__content" onClick={e => e.stopPropagation()}>
                 <h1 className='cart__content-header'>Ваша корзина</h1>
-                <div>
-                    {offer.length === 0 ? <p className='cart__content-text'>Тут пока пусто</p> : <Offer/>}
+                <div className='cart__content-offers'>
+                    {offer.length === 0 ? <p className='cart__content-text'>Тут пока пусто</p> : offer.map((el) => {
+                        return (
+                            <Offer img={el.img} title={el.title} price={el.price}/>
+                        )
+                    })}
                 </div>
                 <button className='cart__content-button'>Оформить заказ</button>
             </div>

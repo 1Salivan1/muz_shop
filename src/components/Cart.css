@@ -25,6 +25,10 @@
     text-align: center;
 }
 
+.cart__content-offers {
+    margin-bottom: 30px;
+}
+
 .cart__content-text {
     font-size: 20px;
 }
