@@ -25,6 +25,16 @@ function Shop() {
         }
     }
 
+    function dataSort(event) {
+        if (event.target.value == 'none'){
+            setCurrentData(data)
+        } else if (event.target.value === 'low-to-high') {
+            setCurrentData([...currentData].sort((a, b) => a["price"] - b["price"]))
+        } else if (event.target.value === 'high-to-low') {
+            setCurrentData([...currentData].sort((a, b) => b["price"] - a["price"]))
+        }
+    }
+
     return (
             <div className='shop'>
                 <div className='container'>
@@ -36,10 +46,10 @@ function Shop() {
                                 onChange={(e) => setValue(e.target.value)}
                             >
                             </input>
-                            <select name='shop__search-sort'>
-                                <option value="1">Без сортирорвки</option>
-                                <option value="2">От дешевых к дорогим</option>
-                                <option value="3">От дорогих к дешевым</option>
+                            <select name='shop__search-sort' onChange={dataSort}>
+                                <option value="none">Без сортирорвки</option>
+                                <option value="low-to-high">От дешевых к дорогим</option>
+                                <option value="high-to-low">От дорогих к дешевым</option>
                             </select>
                         </form>
                         <img className='shop__search-cart' src={cart} onClick={() => modalSetActive(true)}></img>
@@ -66,7 +76,7 @@ function Shop() {
                             }
                         </div>
                     </div>
-                    <Cart active={modalActive} setActive={modalSetActive} offer={cartList}/>
+                    <Cart active={modalActive} setActive={modalSetActive} offer={cartList} setOffer={setCartList}/>
                 </div>
             </div>
     );
