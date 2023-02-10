@@ -11,7 +11,6 @@ function Nav(props) {
     return (
         <div className='nav'>
             <nav className="header__nav">
-                <img className='nav__logo' src={logo} alt=""></img>
                 <div className='header__nav-list'>
                     <a href="/" className="header__nav-item">Главная</a>
                     <a href="/instruments" className="header__nav-item">Инструменты</a>

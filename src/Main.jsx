@@ -11,6 +11,9 @@ import instagram from './img/instagram.png';
 import facebook from './img/facebook.png';
 
 function Home(props) {
+    function message() {
+      alert('К сожалению эта страница пока недоступна, но вы можете заказать инструмент по телефону')
+    }
     return (
     <body>
       <header className="header">
@@ -18,7 +21,7 @@ function Home(props) {
           <h1 className='header__title title'>
             У нас вы найдете подходящий для себя инструмент
           </h1>
-          <button className='header__button button'>Перейти к выбору</button>
+          <p className='header__text'>Мы продаем инструменты практически всех производителей</p>
         </div>
       </header>
 
@@ -42,7 +45,7 @@ function Home(props) {
           <p className='peresonal__description'>
             Вы так же можете заказать инструмент у нас, наши мастера сделают его в течении недели.
           </p>
-          <button className='personal__button button' href="/Shop.jsx">Заказать</button>
+          <button className='personal__button button' href="/Shop.jsx" onClick={message}>Заказать</button>
         </div>
       </section>
 
