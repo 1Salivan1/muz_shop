@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Offer from './Offer';
 import './Cart.css';
-import { render } from '@testing-library/react';
 
-function Cart ({active, setActive, offer, setOffer}) {
+function Cart ({active, setActive, offer, setOffer, setOfferDoneActive}) {
     return (
         <div className={active ? 'cart active' : 'cart'} onClick={() => setActive(false)}>
             <div className="cart__content" onClick={e => e.stopPropagation()}>
@@ -15,7 +14,11 @@ function Cart ({active, setActive, offer, setOffer}) {
                         )
                     })}
                 </div>
-                <button className='cart__content-button'>Оформить заказ</button>
+                <button className='cart__content-button' onClick={() => {
+                    setActive(false)
+                    setOfferDoneActive(true)
+                }}
+                >Оформить заказ</button>
             </div>
         </div>
     );

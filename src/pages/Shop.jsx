@@ -4,12 +4,14 @@ import Cart from '../components/Cart'
 import Product from '../components/Product'
 import cart from '../img/cart.png';
 import data from "../data/data.json";
+import OfferForm from '../components/OfferForm';
 
 function Shop() {
     const [value, setValue] = useState('');
     const [currentData, setCurrentData] = useState(data);
     const [modalActive, modalSetActive] = useState(false);
     const [cartList, setCartList] = useState([]);
+    const [offerDoneActive, setOfferDoneActive] = useState(false);
 
     function dataFilter(event) {
         if (event.target.textContent.toLowerCase() === 'все') {
@@ -76,7 +78,14 @@ function Shop() {
                             }
                         </div>
                     </div>
-                    <Cart active={modalActive} setActive={modalSetActive} offer={cartList} setOffer={setCartList}/>
+                    <Cart 
+                        active={modalActive}
+                        setActive={modalSetActive} 
+                        offer={cartList} 
+                        setOffer={setCartList}
+                        setOfferDoneActive={setOfferDoneActive}
+                    />
+                    <OfferForm offerDoneActive={offerDoneActive} setOfferDoneActive={setOfferDoneActive}/>
                 </div>
             </div>
     );
