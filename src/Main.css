@@ -5,10 +5,14 @@ body {
     margin: 0;
 }
 
+.wrapper {
+    min-width: 1720px;
+}
+
 .container {
+    width: 100%;
     max-width: 1770px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 /* classes */

@@ -38,22 +38,25 @@ function Shop() {
     }
 
     return (
+        <div className='wrapper'>
             <div className='shop'>
                 <div className='container'>
                     <div className='shop__search'>
-                        <form>
-                            <input 
-                                className='shop__search-input' 
-                                placeholder="Поиск" 
-                                onChange={(e) => setValue(e.target.value)}
-                            >
-                            </input>
-                            <select name='shop__search-sort' onChange={dataSort}>
-                                <option value="none">Без сортирорвки</option>
-                                <option value="low-to-high">От дешевых к дорогим</option>
-                                <option value="high-to-low">От дорогих к дешевым</option>
-                            </select>
-                        </form>
+                        <div>
+                            <form>
+                                <input 
+                                    className='shop__search-input' 
+                                    placeholder="Поиск" 
+                                    onChange={(e) => setValue(e.target.value)}
+                                >
+                                </input>
+                                <select className='shop__search-sort' name='shop__search-sort' onChange={dataSort}>
+                                    <option value="none">Без сортирорвки</option>
+                                    <option value="low-to-high">От дешевых к дорогим</option>
+                                    <option value="high-to-low">От дорогих к дешевым</option>
+                                </select>
+                            </form>
+                        </div>
                         <img className='shop__search-cart' src={cart} onClick={() => modalSetActive(true)}></img>
                     </div>
                     <div className='shop__main'>
@@ -88,6 +91,7 @@ function Shop() {
                     <OfferForm offerDoneActive={offerDoneActive} setOfferDoneActive={setOfferDoneActive}/>
                 </div>
             </div>
+        </div>
     );
 }
 

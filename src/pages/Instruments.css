@@ -2,10 +2,6 @@ li {
     list-style-type: none;
 }
 
-.container {
-    max-width: 1868px;
-}
-
 .shop {
     background-color: white;
 }
@@ -27,7 +23,6 @@ li {
 
 .shop__search-sort {
     border: none;
-    background-color: aqua;
 }
 
 .shop__search-cart {
