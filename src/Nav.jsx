@@ -16,9 +16,9 @@ function Nav(props) {
                 <nav className="header__nav">
                     <div className='container'>
                         <div className='header__nav-list'>
-                            <a href="/" className="header__nav-item">Главная</a>
-                            <a href="/instruments" className="header__nav-item">Инструменты</a>
-                            <a href="/contacts" className="header__nav-item">Контакты</a>
+                            <a href="#/" className="header__nav-item">Главная</a>
+                            <a href="#/instruments" className="header__nav-item">Инструменты</a>
+                            <a href="#/contacts" className="header__nav-item">Контакты</a>
                         </div>
                     </div>
                 </nav>

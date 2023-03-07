@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import React from 'react';
 import Main from './Main';
 import Nav from './Nav';
@@ -17,9 +17,9 @@ import facebook from './img/facebook.png';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Nav />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
