@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/muz_shop/static/css/main.419f5cac.css",
-    "main.js": "/muz_shop/static/js/main.cee9955d.js",
+    "main.css": "/muz_shop/static/css/main.92f2e3c1.css",
+    "main.js": "/muz_shop/static/js/main.77333c26.js",
     "static/media/fone.png": "/muz_shop/static/media/fone.1c2b8d7ca0a9823745f1.png",
     "static/media/fone2.png": "/muz_shop/static/media/fone2.03066003f39c0aadb6bd.png",
     "static/media/saxophone.png": "/muz_shop/static/media/saxophone.554fd4b19ddd22856a5d.png",
@@ -10,11 +10,11 @@
     "static/media/guitar.png": "/muz_shop/static/media/guitar.ad89df73cc29f5e182e0.png",
     "static/media/logo.png": "/muz_shop/static/media/logo.452a7d1f25d88ce8cc3b.png",
     "index.html": "/muz_shop/index.html",
-    "main.419f5cac.css.map": "/muz_shop/static/css/main.419f5cac.css.map",
-    "main.cee9955d.js.map": "/muz_shop/static/js/main.cee9955d.js.map"
+    "main.92f2e3c1.css.map": "/muz_shop/static/css/main.92f2e3c1.css.map",
+    "main.77333c26.js.map": "/muz_shop/static/js/main.77333c26.js.map"
   },
   "entrypoints": [
-    "static/css/main.419f5cac.css",
-    "static/js/main.cee9955d.js"
+    "static/css/main.92f2e3c1.css",
+    "static/js/main.77333c26.js"
   ]
 }
