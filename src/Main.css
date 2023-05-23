@@ -6,12 +6,12 @@ body {
 }
 
 .wrapper {
-    min-width: 1000px;
+    width: 100%;
 }
 
 .container {
-    width: 100%;
     max-width: 1770px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -83,6 +83,7 @@ body {
 .offer__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Personal */
