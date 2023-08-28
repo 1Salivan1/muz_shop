@@ -2,10 +2,7 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Shop from './pages/Shop';
 import Contacts from './pages/Contacts';
-import Main from './Main';
-import './Nav.css';
-import './Main.css';
-import './adaptive.css';
+import Main from './pages/Main';
 import logo from './img/logo.png';
 
 

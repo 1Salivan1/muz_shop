@@ -1,5 +1,5 @@
 import React from 'react';
-import './Offer.css';
+import '../css/Offer.css';
 import guitar from '../img/guitar.png';
 
 function Offer({id, img, title, price, offers, setOffers}) {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Product.css';
+import '../css/Product.css';
 
 function Product({img, title, price, id, type, addToCart}) {
     return (

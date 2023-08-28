@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contacts.css';
+import '../css/Contacts.css';
 import telegram from '../img/telegram.png';
 import instagram from '../img/instagram.png';
 import facebook from '../img/facebook.png';

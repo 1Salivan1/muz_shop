@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Offer from './Offer';
-import './Cart.css';
+import '../css/Cart.css';
 
 function Cart ({active, setActive, offer, setOffer, setOfferDoneActive}) {
     return (

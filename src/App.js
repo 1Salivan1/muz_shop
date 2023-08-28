@@ -1,6 +1,6 @@
 import { HashRouter } from 'react-router-dom';
 import React from 'react';
-import Main from './Main';
+import Main from './pages/Main';
 import Nav from './Nav';
 import Shop from './pages/Shop';
 import Contacts from './pages/Contacts';

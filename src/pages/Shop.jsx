@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Instruments.css';
+import '../css/Instruments.css';
 import Cart from '../components/Cart'
 import Product from '../components/Product'
 import cart from '../img/cart.png';
