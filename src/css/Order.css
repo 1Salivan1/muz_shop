@@ -1,0 +1,21 @@
+.order {
+    color: black;
+}
+
+.order__header {
+    text-align: center;
+}
+
+.order-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-list {
+    padding: 0;
+}
+
+.order-list__item {
+    display: flex;
+}
