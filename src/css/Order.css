@@ -1,21 +1,70 @@
 .order {
-    color: black;
+  padding: 50px 0px;
+  color: black;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .order__header {
-    text-align: center;
+  text-align: center;
+  margin: 0;
 }
 
 .order-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
 }
 
 .order-list {
-    padding: 0;
+  padding: 0;
 }
 
 .order-list__item {
-    display: flex;
+  display: flex;
+}
+
+.order__description {
+  width: 50%;
+}
+
+.personal-wishes {
+  width: 250px;
+  height: 150px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.order-button {
+  background-color: #29912d;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.order-button:hover {
+  background-color: #32af37;
+}
+
+.order-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__right {
+  margin: auto;
+}
+
+.order-right {
+  margin-right: 200px;
+}
+
+.order-img {
+  max-height: 500px;
 }
