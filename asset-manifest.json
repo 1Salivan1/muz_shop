@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/muz_shop/static/css/main.6f7572f9.css",
-    "main.js": "/muz_shop/static/js/main.77333c26.js",
+    "main.css": "/muz_shop/static/css/main.f6dba07b.css",
+    "main.js": "/muz_shop/static/js/main.2b2d1ba0.js",
+    "static/media/bass.jpg": "/muz_shop/static/media/bass.4b8e4e1caff2c63d8ca2.jpg",
+    "static/media/acustick-guitar.png": "/muz_shop/static/media/acustick-guitar.76b1c799ef36f7cdc25c.png",
     "static/media/fone.png": "/muz_shop/static/media/fone.1c2b8d7ca0a9823745f1.png",
     "static/media/fone2.png": "/muz_shop/static/media/fone2.03066003f39c0aadb6bd.png",
+    "static/media/electric-guitar.png": "/muz_shop/static/media/electric-guitar.fbc5804fa8c9c29deed8.png",
+    "static/media/classic-guitar.png": "/muz_shop/static/media/classic-guitar.352f55f51643c345f6e6.png",
     "static/media/saxophone.png": "/muz_shop/static/media/saxophone.554fd4b19ddd22856a5d.png",
     "static/media/violence.png": "/muz_shop/static/media/violence.b918677f8d049a5b10f6.png",
     "static/media/drums.png": "/muz_shop/static/media/drums.cb93159cac4715a1521d.png",
     "static/media/guitar.png": "/muz_shop/static/media/guitar.ad89df73cc29f5e182e0.png",
     "static/media/logo.png": "/muz_shop/static/media/logo.452a7d1f25d88ce8cc3b.png",
     "index.html": "/muz_shop/index.html",
-    "main.6f7572f9.css.map": "/muz_shop/static/css/main.6f7572f9.css.map",
-    "main.77333c26.js.map": "/muz_shop/static/js/main.77333c26.js.map"
+    "main.f6dba07b.css.map": "/muz_shop/static/css/main.f6dba07b.css.map",
+    "main.2b2d1ba0.js.map": "/muz_shop/static/js/main.2b2d1ba0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f7572f9.css",
-    "static/js/main.77333c26.js"
+    "static/css/main.f6dba07b.css",
+    "static/js/main.2b2d1ba0.js"
   ]
 }
