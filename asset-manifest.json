@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/muz_shop/static/css/main.f6dba07b.css",
+    "main.css": "/muz_shop/static/css/main.dd4cc436.css",
     "main.js": "/muz_shop/static/js/main.2104719c.js",
     "static/media/bass.jpg": "/muz_shop/static/media/bass.4b8e4e1caff2c63d8ca2.jpg",
     "static/media/acustick-guitar.png": "/muz_shop/static/media/acustick-guitar.76b1c799ef36f7cdc25c.png",
@@ -14,11 +14,11 @@
     "static/media/guitar.png": "/muz_shop/static/media/guitar.ad89df73cc29f5e182e0.png",
     "static/media/logo.png": "/muz_shop/static/media/logo.452a7d1f25d88ce8cc3b.png",
     "index.html": "/muz_shop/index.html",
-    "main.f6dba07b.css.map": "/muz_shop/static/css/main.f6dba07b.css.map",
+    "main.dd4cc436.css.map": "/muz_shop/static/css/main.dd4cc436.css.map",
     "main.2104719c.js.map": "/muz_shop/static/js/main.2104719c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6dba07b.css",
+    "static/css/main.dd4cc436.css",
     "static/js/main.2104719c.js"
   ]
 }
