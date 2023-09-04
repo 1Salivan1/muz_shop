@@ -1,143 +1,157 @@
 @media screen and (max-width: 1200px) {
-    
-    .title {
-        font-size: 60px;
-    }
+  .title {
+    font-size: 60px;
+  }
 
-    .header__text {
-        font-size: 30px;
-    }
+  .header__text {
+    font-size: 30px;
+  }
 
-    .peresonal__description {
-        font-size: 30px;
-        width: 50%;
-    }
+  .peresonal__description {
+    font-size: 30px;
+    width: 50%;
+  }
 
-    .personal__button {
-        margin-bottom: 100px;
-    }
+  .personal__button {
+    margin-bottom: 100px;
+  }
 
-    .shop__main {
-        flex-direction: column;
-    }
+  .shop__main {
+    flex-direction: column;
+  }
 
-    .shop__main-category {
-        margin: 0;
-    }
+  .shop__main-category {
+    margin: 0;
+  }
 
-    .shop__main-category-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  .shop__main-category-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .product {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
+  .product {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 
-    .product:not(:last-child) {
-        margin-right: 30px;
-    }
+  .product:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .header__nav-list {
-        display: flex;
-        flex-direction: column;
-    }
+  .header {
+    padding: 50px 25px;
+  }
 
-    .header__nav-item:not(:last-child) {
-        margin: 0;
-    }
+  .header__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .header__nav-item {
-        font-size: 35px;
-    }
+  .header__nav-item:not(:last-child) {
+    margin: 0;
+  }
 
-    .footer-container {
-        flex-direction: column;
-    }
+  .header__nav-item {
+    font-size: 35px;
+  }
 
-    .footer__right {
-        text-align: center;
-        margin-left: 0;
-    }
+  .footer-container {
+    flex-direction: column;
+  }
 
+  .footer__right {
+    text-align: center;
+    margin-left: 0;
+  }
 
-    .shop__main-category-item {
-        font-size: 30px;
-    }
+  .shop__main-category-item {
+    font-size: 30px;
+  }
 
-    .product__top-title {
-        font-size: 25px;
-    }
+  .product__top-title {
+    font-size: 25px;
+  }
 
-    .product__buy-price {
-        font-size: 25px;
-    }
+  .product__buy-price {
+    font-size: 25px;
+  }
 
-    .product__buy-button {
-        font-size: 25px;
-    } 
+  .product__buy-button {
+    font-size: 25px;
+  }
 
-    .product {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
+  .product {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 
-    .product:not(:last-child) {
-        margin-right: 30px;
-    }
+  .product:not(:last-child) {
+    margin-right: 30px;
+  }
 
-    .shop__main-products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .shop__main-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-block {
+    flex-direction: column;
+  }
+
+  .order-left {
+    align-items: center;
+  }
+
+  .order-right {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .title {
-        font-size: 45px;
-    }
+  .title {
+    font-size: 45px;
+  }
 
-    .header__text {
-        font-size: 30px;
-    }
+  .header__text {
+    font-size: 30px;
+  }
 
-    .peresonal__description {
-        width: 100%;
-    }
+  .peresonal__description {
+    width: 100%;
+  }
 
-    .personal__button {
-        font-size: 20px;
-    }
+  .personal__button {
+    font-size: 20px;
+  }
 
-    .shop__search-input {
-        width: 200px;
-    }
+  .shop__search-input {
+    width: 200px;
+  }
 
-    .offer-card__content-text {
-        font-size: 20px;
-        margin-right: 15px;
-    }
+  .offer-card__content-text {
+    font-size: 20px;
+    margin-right: 15px;
+  }
 
-    .offer-card__content-price {
-        font-size: 20px;
-        margin-right: 15px;
-    }
+  .offer-card__content-price {
+    font-size: 20px;
+    margin-right: 15px;
+  }
 
-    .offer-card__content-button {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
+  .offer-card__content-button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 
-    .cart__content-button {
-        font-size: 20px;
-    }
+  .cart__content-button {
+    font-size: 20px;
+  }
 
-    .cart__content-offers {
-        max-height: 250px;
-    }
+  .cart__content-offers {
+    max-height: 250px;
+  }
 }
