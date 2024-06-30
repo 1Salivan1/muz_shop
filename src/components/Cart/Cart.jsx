@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Offer from "./Offer";
-import "../css/Cart.css";
+import Offer from "../Offer/Offer";
+import "./cart.css";
 
 function Cart({ active, setActive, offer, setOffer, setOfferDoneActive }) {
   return (

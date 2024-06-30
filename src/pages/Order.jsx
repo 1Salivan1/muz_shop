@@ -3,7 +3,7 @@ import classic from "../img/classic-guitar.png";
 import acustic from "../img/acustick-guitar.png";
 import electro from "../img/electric-guitar.png";
 import bass from "../img/bass.jpg";
-import OfferForm from "../components/OfferForm";
+import OfferForm from "../components/OfferForm/OfferForm";
 
 function Order() {
   const [selectedRadio, setSelectedRadio] = useState("classic");

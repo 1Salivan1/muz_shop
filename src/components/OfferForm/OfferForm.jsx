@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/OfferForm.css";
+import "./offer-form.css";
 
 function OfferForm({ offerDoneActive, setOfferDoneActive }) {
   return (
