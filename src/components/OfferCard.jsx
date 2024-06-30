@@ -1,5 +1,5 @@
 import React from 'react';
-import './OfferCard.css'
+import '../css/OfferCard.css'
 
 function OfferCard(props) {
     return (

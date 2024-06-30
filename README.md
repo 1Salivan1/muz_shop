@@ -1,3 +1,6 @@
+This is a simple musical instrument store. It implements the functions of switching between pages using the react-router-dom, sorting and searching for goods, as well as a basket with added goods.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

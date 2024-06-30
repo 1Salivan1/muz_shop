@@ -8,7 +8,8 @@ a {
     color: white;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 250px;
+    height: 100%;
 }
 
 .contacts__header {
