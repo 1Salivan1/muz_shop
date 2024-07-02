@@ -1,6 +1,6 @@
 import style from "./button.module.css";
 
-function Button({ text, onClick, color }) {
+function Button(props, { onClick, color }) {
   return (
     <button
       className={
@@ -8,7 +8,7 @@ function Button({ text, onClick, color }) {
       }
       onClick={onClick}
     >
-      {text}
+      {props.children}
     </button>
   );
 }

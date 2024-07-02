@@ -1,11 +1,12 @@
 import React from "react";
-import "./instrument-card.css";
+import style from "./instrument-card.module.css";
+import Text from "../../ui/Typography/Text/Text";
 
 function InstrumentCard(props) {
   return (
-    <div className="offerCard">
-      <img className="offerCard__image" src={props.img}></img>
-      <h1 className="offerCard__title">{props.title}</h1>
+    <div className={style["instrumentCard"]}>
+      <img className={style["offerCard__image"]} src={props.img}></img>
+      <Text isBold={true}>{props.title}</Text>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-function Paragraph({ text, color, mb, mt, mr, ml, size }) {
+function Paragraph({ children, color, mb, mt, mr, ml, size }) {
   return (
     <p
       style={{
@@ -10,7 +10,7 @@ function Paragraph({ text, color, mb, mt, mr, ml, size }) {
         fontSize: size ? size : "30px",
       }}
     >
-      {text}
+      {children}
     </p>
   );
 }
