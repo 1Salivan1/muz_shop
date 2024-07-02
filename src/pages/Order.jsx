@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import classic from "../img/classic-guitar.png";
-import acustic from "../img/acustick-guitar.png";
-import electro from "../img/electric-guitar.png";
-import bass from "../img/bass.jpg";
+import classic from "../assets/img/classic-guitar.png";
+import acustic from "../assets/img/acustick-guitar.png";
+import electro from "../assets/img/electric-guitar.png";
+import bass from "../assets/img/bass.jpg";
 import OfferForm from "../components/OfferForm/OfferForm";
 
 function Order() {

@@ -1,8 +1,8 @@
 import React from "react";
 import "../css/Contacts.css";
-import telegram from "../img/telegram.png";
-import instagram from "../img/instagram.png";
-import facebook from "../img/facebook.png";
+import telegram from "../assets/img/telegram.png";
+import instagram from "../assets/img/instagram.png";
+import facebook from "../assets/img/facebook.png";
 
 function Contacts(props) {
   return (

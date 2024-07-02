@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Cart from "../components/Cart/Cart";
 import Product from "../components/Product/Product";
 import OfferForm from "../components/OfferForm/OfferForm";
-import cart from "../img/cart.png";
-import data from "../data/data.json";
+import cart from "../assets/img/cart.png";
 import "../css/Instruments.css";
+import { data } from "../data/data";
 
 function Shop() {
   const [value, setValue] = useState("");

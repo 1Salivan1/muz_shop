@@ -1,7 +1,7 @@
 import React from "react";
-import "./offer-card.css";
+import "./instrument-card.css";
 
-function OfferCard(props) {
+function InstrumentCard(props) {
   return (
     <div className="offerCard">
       <img className="offerCard__image" src={props.img}></img>
@@ -10,4 +10,4 @@ function OfferCard(props) {
   );
 }
 
-export default OfferCard;
+export default InstrumentCard;
