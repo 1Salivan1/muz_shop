@@ -19,3 +19,18 @@ ul,
 ol {
   padding: 0;
 }
+
+body {
+  font-family: "Exo 2";
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: 1770px;
+  padding: 0 30px;
+  margin: 0 auto;
+}

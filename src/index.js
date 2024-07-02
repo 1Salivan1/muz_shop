@@ -1,15 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import "./css/Nav.css";
-import "./css/Main.css";
 import "./css/adaptive.css";
 import "./css/Order.css";
 import "./css/global.css";
+import { HashRouter } from "react-router-dom";
+import Header from "./components/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <Header />
+    </HashRouter>
   </React.StrictMode>
 );
