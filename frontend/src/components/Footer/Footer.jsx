@@ -2,7 +2,6 @@ import React from "react";
 import telegram from "../../assets/img/telegram.png";
 import instagram from "../../assets/img/instagram.png";
 import facebook from "../../assets/img/facebook.png";
-import Link from "../../ui/Typography/Link/Link";
 import style from "./Footer.module.css";
 
 const Footer = () => {
@@ -14,22 +13,22 @@ const Footer = () => {
             <h5 style={{ marginBottom: "20px" }}>Контакты:</h5>
             <ul className={style["footer-left-list"]}>
               <li className={style["footer-left-list__item"]}>
-                <Link href={"tel:+380999999999"} color={"#fff"}>
+                <a href={"tel:+380999999999"} color={"#fff"}>
                   + 380 999 999 999
-                </Link>
+                </a>
               </li>
               <li className={style["footer-left-list__item"]}>
-                <Link href={"tel:+380777777777"} color={"#fff"}>
+                <a href={"tel:+380777777777"} color={"#fff"}>
                   + 380 777 777 777
-                </Link>
+                </a>
               </li>
             </ul>
             <h5 style={{ marginBottom: "20px" }}>Email:</h5>
             <ul>
               <li>
-                <Link href={"mailto:muzshop@example.com"} color={"#fff"}>
+                <a href={"mailto:muzshop@example.com"} color={"#fff"}>
                   muzshop@example.com
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -37,19 +36,19 @@ const Footer = () => {
             <h5 style={{ marginBottom: "20px" }}>Соц. сети:</h5>
             <ul className={style["footer__right-social"]}>
               <li>
-                <Link href={"#"}>
+                <a href={"#"}>
                   <img src={telegram}></img>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={"#"}>
+                <a href={"#"}>
                   <img src={instagram}></img>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={"#"}>
+                <a href={"#"}>
                   <img src={facebook}></img>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
