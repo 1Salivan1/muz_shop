@@ -19,7 +19,10 @@ function Home() {
       <div className="wrapper">
         <div className={style["header"]}>
           <div className="container">
-            <h1 style={{ marginBottom: "20px" }}>
+            <h1
+              className={style["main-header"]}
+              style={{ marginBottom: "20px" }}
+            >
               У нас вы найдете подходящий для себя инструмент
             </h1>
             <p>Мы продаем инструменты практически всех производителей</p>
@@ -42,7 +45,12 @@ function Home() {
 
         <section className={style["personal"]}>
           <div className="container">
-            <h1 style={{ marginBottom: "20px" }}>Инструмент на заказ</h1>
+            <h1
+              className={style["personal-header"]}
+              style={{ marginBottom: "20px" }}
+            >
+              Инструмент на заказ
+            </h1>
             <p style={{ marginBottom: "20px" }}>
               Вы так же можете заказать инструмент у нас, наши мастера сделают
               его в течении недели.
