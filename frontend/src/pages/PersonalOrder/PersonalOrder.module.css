@@ -1,3 +1,7 @@
+.order-wrapper {
+  background-color: white;
+}
+
 .order {
   padding: 50px 0px;
   color: black;
@@ -10,6 +14,15 @@
   margin: 0;
 }
 
+.color-input {
+  height: 50px;
+  padding: 5px;
+}
+
+.radio-input {
+  width: 50px;
+}
+
 .order-block {
   display: flex;
   align-items: center;
@@ -19,10 +32,12 @@
 
 .order-list {
   padding: 0;
+  justify-content: flex-start;
 }
 
 .order-list__item {
   display: flex;
+  justify-content: flex-start;
 }
 
 .order__description {
@@ -30,7 +45,7 @@
 }
 
 .personal-wishes {
-  width: 250px;
+  width: 300px;
   height: 150px;
   resize: none;
   margin-bottom: 10px;
@@ -55,16 +70,19 @@
 .order-left {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .order__right {
   margin: auto;
 }
 
-.order-right {
-  margin-right: 200px;
-}
-
 .order-img {
   max-height: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .order-right {
+    display: none;
+  }
 }

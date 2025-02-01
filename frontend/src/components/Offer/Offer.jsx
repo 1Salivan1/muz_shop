@@ -5,7 +5,6 @@ function Offer({ id, img, title, price, offers, setOffers }) {
   function Remove() {
     let newList = offers.filter((el) => el.id !== id);
     setOffers(newList);
-    console.log(offers);
   }
 
   return (

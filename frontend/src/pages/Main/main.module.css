@@ -9,7 +9,7 @@
 }
 
 .button {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   border-radius: 100px;
   border: 4px solid #ffffff;
   padding: 43px 50px;
@@ -24,8 +24,8 @@
   color: white;
   padding-left: 94px;
   padding-right: 94px;
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 300px;
+  padding-bottom: 450px;
   background: url("../../assets/img/fone.png") no-repeat;
   background-size: cover;
   text-align: center;
@@ -65,10 +65,15 @@
 /* Personal */
 
 .personal {
-  padding: 50px 0px 250px 0px;
+  padding: 200px 100px;
   color: #ffffff;
   background: url("../../assets/img/fone2.png") no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .personal__title {
@@ -84,48 +89,4 @@
 .personal__button {
   font-size: 35px;
   padding: 30px 40px;
-}
-
-/* Footer */
-
-.footer {
-  padding: 50px 0px;
-  color: #ffffff;
-  background-color: rgb(31, 31, 31);
-}
-
-.footer-container {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.footer-left-list__item {
-  margin-bottom: 20px;
-}
-
-.footer__header {
-  font-size: 30px;
-}
-
-.footer__description {
-  font-size: 20px;
-}
-
-.footer__right-social {
-  display: flex;
-  gap: 25px;
-}
-
-.footer__right-social-item:not(:last-child) {
-  margin-right: 25px;
-}
-
-.footer__right-logo {
-  width: 80%;
-}
-
-.footer__right {
-  text-align: right;
-  margin-left: auto;
 }

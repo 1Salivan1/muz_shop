@@ -15,6 +15,10 @@
   justify-content: space-between;
 }
 
+.product-top {
+  margin-bottom: 20px;
+}
+
 .product__top-image-background {
   background-color: white;
   border-radius: 20px;

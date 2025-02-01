@@ -7,12 +7,33 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 35px;
+}
+h5 {
+  font-size: 30px;
+}
+h6 {
+  font-size: 25px;
+}
+
 p {
   margin: 0;
+  font-size: 25px;
 }
 
 a {
   text-decoration: none;
+  font-size: 25px;
 }
 
 ul,
@@ -34,4 +55,51 @@ body {
   max-width: 1770px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+/* UI */
+/* Button */
+.button {
+  background-color: #ffffff00;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 32px;
+  padding: 10px 21px;
+  margin-top: 21px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 0;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.green-button {
+  background-color: #29912d;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 32px;
+  padding: 4px 21px;
+  margin-top: 21px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 0;
+}
+
+.green-button:hover {
+  background-color: #32af37;
+}
+
+/* Input */
+
+input {
+  border-radius: 15px;
+  border: 3px solid black;
+  padding: 10px;
+  width: 250px;
+  font-size: 20px;
 }

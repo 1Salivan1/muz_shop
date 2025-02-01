@@ -1,19 +1,20 @@
 import React from "react";
-import "./product.css";
-import Button from "../../ui/Button/Button";
+import styles from "./Product.module.css";
 
 function Product({ img, title, price, id, type, addToCart }) {
   return (
-    <div className="product" key={id} type={type}>
-      <div className="buy__top">
-        <div className="product__top-image-background">
-          <img className="product__top-image" src={`../../${img}`}></img>
+    <div className={styles["product"]} key={id} type={type}>
+      <div className={styles["product-top"]}>
+        <div className={styles["product__top-image-background"]}>
+          <img className={styles["product__top-image"]} src={img} alt={title} />
         </div>
-        <h3 className="product__top-title">{title}</h3>
+        <h5>{title}</h5>
       </div>
-      <div className="product__buy">
-        <h3 className="product__buy-price">{price} грн</h3>
-        <Button onClick={addToCart} color={"green"} text={"В корзину"} />
+      <div className={styles["product__buy"]}>
+        <h6 style={{ marginBottom: "5px" }}>{price} грн</h6>
+        <button className="green-button" onClick={addToCart}>
+          В корзину
+        </button>
       </div>
     </div>
   );
