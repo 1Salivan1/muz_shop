@@ -2,7 +2,6 @@
   "name": "muz_shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://1salivan1.github.io/muz_shop",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
