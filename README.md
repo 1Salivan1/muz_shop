@@ -2,18 +2,6 @@
 
 Muz Shop is a React-based web application for a musical instruments store. It provides a user-friendly interface for browsing and purchasing various musical instruments.
 
-## Features
-
-- Browse a variety of musical instruments
-- Responsive design for desktop and mobile devices
-- Navigation using React Router
-
-## Technologies Used
-
-- React
-- React Router
-- GitHub Pages for deployment
-
 ## Getting Started
 
 ### Prerequisites
