@@ -1,9 +1,9 @@
 import React from "react";
 import InstrumentCard from "../../components/InstrumentCard/InstrumentCard";
-import guitar from "../../assets/img/guitar.png";
-import violence from "../../assets/img/violence.png";
-import drums from "../../assets/img/drums.png";
-import saxophone from "../../assets/img/saxophone.png";
+import guitar from "../../assets/img/guitar.jpg";
+import violence from "../../assets/img/violence.jpg";
+import drums from "../../assets/img/drums.jpg";
+import saxophone from "../../assets/img/saxophone.jpg";
 import style from "./Main.module.css";
 import { useNavigate } from "react-router-dom";
 

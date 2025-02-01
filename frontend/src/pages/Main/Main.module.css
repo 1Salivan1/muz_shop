@@ -26,7 +26,7 @@
   padding-right: 94px;
   padding-top: 300px;
   padding-bottom: 450px;
-  background: url("../../assets/img/fone.png") no-repeat;
+  background: url("../../assets/img/fone.jpg") no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -67,7 +67,7 @@
 .personal {
   padding: 200px 100px;
   color: #ffffff;
-  background: url("../../assets/img/fone2.png") no-repeat;
+  background: url("../../assets/img/fone2.jpg") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
