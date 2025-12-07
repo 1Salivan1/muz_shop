@@ -14,7 +14,9 @@ li {
 }
 
 .shop-search-sort {
-  border: none;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 15px;
 }
 
 .cart {

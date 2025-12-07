@@ -12,6 +12,8 @@
 
 .footer-left {
   text-align: left;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-left-list__item {
@@ -55,6 +57,7 @@ img {
   }
   .footer-left {
     text-align: center;
+    flex-direction: column;
     margin-bottom: 20px;
   }
   .footer-right {

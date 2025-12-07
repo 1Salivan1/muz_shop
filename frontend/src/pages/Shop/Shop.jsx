@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "../../components/Cart/Cart";
 import Product from "../../components/Product/Product";
 import OfferForm from "../../components/OfferForm/OfferForm";
@@ -68,6 +68,7 @@ function Shop() {
                 <input
                   placeholder="Поиск"
                   onChange={(e) => setValue(e.target.value)}
+                  style={{ marginRight: "20px" }}
                 />
                 <select
                   className={styles["shop-search-sort"]}

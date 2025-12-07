@@ -3,7 +3,7 @@
 }
 
 .order {
-  padding: 50px 20px;
+  padding: 50px 0px;
   color: black;
   max-width: 1300px;
   margin: auto;
@@ -17,6 +17,7 @@
 .color-input {
   height: 50px;
   padding: 5px;
+  margin-bottom: 20px;
 }
 
 .radio-input {
@@ -33,6 +34,7 @@
 .order-list {
   padding: 0;
   justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .order-list__item {
