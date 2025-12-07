@@ -1,4 +1,3 @@
-import React from "react";
 import Offer from "../Offer/Offer";
 import "./cart.css";
 

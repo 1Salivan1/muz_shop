@@ -1,4 +1,3 @@
-import React from "react";
 import "./offer-form.css";
 
 function OfferForm({ offerDoneActive, setOfferDoneActive }) {

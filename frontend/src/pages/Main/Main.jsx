@@ -1,4 +1,3 @@
-import React from "react";
 import InstrumentCard from "../../components/InstrumentCard/InstrumentCard";
 import guitar from "../../assets/img/guitar.jpg";
 import violence from "../../assets/img/violence.jpg";

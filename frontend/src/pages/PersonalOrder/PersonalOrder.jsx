@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import classic from "../../assets/img/classic-guitar.png";
 import acustic from "../../assets/img/acustick-guitar.png";
 import electro from "../../assets/img/electric-guitar.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./instrument-card.module.css";
 import { useNavigate } from "react-router-dom";
 
